@@ -1,0 +1,22 @@
+
+"""
+  # First
+  1. conda update conda`  
+  2. conda update conda --all  
+  3. conda env create -f environment.yml  
+  4. conda activate recruit_assit
+  5. conda env list  
+  
+  # Second
+  conda env create -f environment.yml
+"""
+
+name: BTC
+channels:
+  - conda-forge
+  - anaconda
+dependencies:
+  - python==3.8
+  - pip
+  - pip:
+    - -r requirements.txt
